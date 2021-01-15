@@ -1,0 +1,123 @@
+:root {
+  --primary-color: #1e1c36;
+  --secondary-color: #54546b;
+  --background-btn-primary: #6d74f7;
+  --background-btn-secondary: #6d6c85;
+  --text-primary: #c7c7d6;
+  --text-secondary: #8c8cb0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  position: relative;
+  margin: 2rem 0;
+  border-radius: 7px;
+}
+
+.card .card-content {
+  padding: 24px;
+}
+
+.card .card-content .card-title {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.input-field {
+  width: 100%;
+}
+
+input[type='text'] {
+  color: #fff;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  outline: none;
+  height: 3rem;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: var(--background-btn-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+}
+
+.btn-clear {
+  background: var(--primary-color);
+}
+
+.card-action {
+  border-top: 1px solid var(--secondary-color);
+  padding: 24px;
+}
+
+.filtertask-title {
+  color: var(--text-primary);
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.collection {
+  list-style: none;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid var(--text-secondary);
+  border-radius: 2px;
+  /* overflow: hidden; */
+  position: relative;
+  /* display: none; */
+}
+
+.collection .collection-task {
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.collection-task:last-child {
+  border-bottom: none;
+}
+
+.collection .collection-task .delete-task {
+  float: right;
+}
+
+.collection .collection-task .delete-task i {
+  transition: color 0.3s ease;
+}
+.collection .collection-task .delete-task i:hover {
+  color: var(--primary-color);
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
